@@ -1,55 +1,67 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+  
+}
 .main_div{
   display: flex;
   justify-content: center;
-  background-color: rgb(44, 209, 214);
+  background-color:cyan;
   height: 100vh;
 }
-/*.app_container {
+.app_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   width:30vw;
   height: 90vh;
   border: 2px solid;
+  border-radius: 5%;
   margin-top: 3%;
-  background-color: blueviolet;
-}*/
+  background-color: rgb(99, 91, 102);
+  box-shadow: 0px 5px 15px 0px;
+  overflow: auto;
+}
 .heading{
-  color: #b8340c;
+  color: #f0e6e3;
   text-align: center;
-
 }
 .input{
-  width: 40vw;
-  height: 3.5vh;
+  border-radius: 5px;
+  height: 3.7vh;
+  width: fit-content;
+  
 }
+
 .add {
   color: white;
-  height: 4vh;
   cursor: pointer;
+  border: none;
+  padding: 4px;
   margin: 2px;
   background-color: green;
   opacity: 0.7;
+  border-radius: 5px;
 }
 .add:hover{
-  color: white;
-  background-color: green;
   opacity: 1;
+  
 }
 .deleteAll{
-  background-color: red;
   color: white;
-  height: 4vh;
+  background-color: red;
   opacity: 0.7;
-  cursor: pointer;
+  padding: 4px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
 }
 .deleteAll:hover{
   opacity: 1;
 }
-
-/*@media (prefers-reduced-motion: no-preference) {
-  .add {
-    animation: App-logo-spin infinite 1s linear;
-  }
-}*/
 
 .App-header {
   background-color: #282c34;
@@ -65,12 +77,29 @@
 .App-link {
   color: #61dafb;
 }
+.developer{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: brown;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width : 500px)
+{
+  .app_container {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:70vw;
+    height: 90vh;
+    border: 2px solid;
+    border-radius: 2%;
+    margin-top: 3%;
+    background-color: rgb(81, 79, 82);
+    box-shadow: 0px 5px 15px 0px;
+    overflow: auto;
   }
 }
+
+

@@ -5,8 +5,8 @@ import ListComp from './ListComp';
 const Todos = (props)=>{
   return (
     <div>
-      {props.todos.map((todo)=>{
-        return <ListComp todo={todo} key={todo} onDelete={props.onDelete}/>
+      {props.todos.map((element,index)=>{
+        return <ListComp todo={element} index={index} key={index} onDelete={props.onDelete} editTodo={props.editTodo}/>
       })}
     </div>
   )
