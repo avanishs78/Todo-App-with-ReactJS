@@ -7,8 +7,11 @@
 .main_div{
   display: flex;
   justify-content: center;
-  background-color:cyan;
+  background-image: url("./background_image.jpg");
+  /* background-color:cyan; */
+  background-size:contain;
   height: 100vh;
+  width: 100vw;
 }
 .app_container {
   position: absolute;
@@ -31,7 +34,7 @@
 }
 .input{
   border-radius: 5px;
-  height: 3.7vh;
+  height: 4vh;
   width: fit-content;
   
 }

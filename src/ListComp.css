@@ -17,11 +17,8 @@
   
 }
 .checkbox:hover{
-  width: 23px;
-  height: 23px;
   cursor: pointer;
   border-width: 5px;
-  background-color: solid green;
   
 }
 .todo{
