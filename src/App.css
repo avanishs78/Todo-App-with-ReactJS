@@ -17,7 +17,6 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
   width:30vw;
   height: 90vh;
@@ -27,6 +26,7 @@
   background-color: rgb(99, 91, 102);
   box-shadow: 0px 5px 15px 0px;
   overflow: auto;
+  scrollbar-width: none;
 }
 .heading{
   color: #f0e6e3;
@@ -34,9 +34,13 @@
 }
 .input{
   border-radius: 5px;
-  height: 4vh;
+  height: 4.5vh;
   width: fit-content;
   
+}
+.input:focus{
+  outline: none;
+  border: 2px solid rgb(9, 9, 212);
 }
 
 .add {
@@ -51,7 +55,8 @@
 }
 .add:hover{
   opacity: 1;
-  
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 .deleteAll{
   color: white;
@@ -64,6 +69,8 @@
 }
 .deleteAll:hover{
   opacity: 1;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .App-header {
@@ -87,7 +94,7 @@
   color: brown;
 }
 
-@media screen and (max-width : 500px)
+@media screen and (max-width : 600px)
 {
   .app_container {
     position: unset;
@@ -102,6 +109,25 @@
     background-color: rgb(81, 79, 82);
     box-shadow: 0px 5px 15px 0px;
     overflow: auto;
+    scrollbar-width: none;
+  }
+}
+@media only screen and (min-width : 600px) and (max-width : 1200px)
+{
+  .app_container {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:50vw;
+    height: 90vh;
+    border: 2px solid;
+    border-radius: 2%;
+    margin-top: 3%;
+    background-color: rgb(81, 79, 82);
+    box-shadow: 0px 5px 15px 0px;
+    overflow: auto;
+    scrollbar-width: none;
   }
 }
 

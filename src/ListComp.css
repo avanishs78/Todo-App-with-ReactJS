@@ -9,7 +9,11 @@
   border-radius: 5px;
   padding: 10px;
 }
-.checkbox{
+.sl_no{
+  font-size: 1.5rem;
+  color: white;
+}
+/* .checkbox{
   width: 20px;
   height: 20px;
   border: solid white;
@@ -20,7 +24,7 @@
   cursor: pointer;
   border-width: 5px;
   
-}
+} */
 .todo{
   margin-left: 20px;
   color: white;
